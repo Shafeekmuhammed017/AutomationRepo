@@ -66,8 +66,14 @@ public class TestScripts extends Base_page implements Constants {
     @Test()
     public void testsevenlast()
     {
-        System.out.println("Iam inside testsix method"+Thread.currentThread().getId());
+        System.out.println("Iam inside test seven method"+Thread.currentThread().getId());
     }
+    @Test()
+    public void eight()
+    {
+        System.out.println("Iam inside test eight method"+Thread.currentThread().getId());
+    }
+
 
 
 }
