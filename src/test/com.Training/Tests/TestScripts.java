@@ -73,6 +73,11 @@ public class TestScripts extends Base_page implements Constants {
     {
         System.out.println("Iam inside test eight method"+Thread.currentThread().getId());
     }
+    @Test()
+    public void nine()
+    {
+        System.out.println("Iam inside test nine method"+Thread.currentThread().getId());  // for checking pull request.
+    }
 
 
 
