@@ -1,16 +1,19 @@
 package Libraries;
 
+import Config.propertiesFile;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
+import java.io.FileNotFoundException;
 import java.util.concurrent.TimeUnit;
 
 public class Base_page implements Constants {
  public static WebDriver driver = null;
  public WebDriverWait wait;
+ public static String browser = null;
  @Parameters("browsername")
 @BeforeTest
     public static void driver_Setup(String browsername) throws InterruptedException {
@@ -54,6 +57,14 @@ public class Base_page implements Constants {
 @AfterTest
     public void teardown()
 {
+    System.out.println(" test propertyfile : current browser value"+browser);
+    try {
+        propertiesFile.getproperties();
+        propertiesFile.setproperties();
+
+    } catch (FileNotFoundException e) {
+        e.printStackTrace();
+    }
     driver.quit();
 }
 

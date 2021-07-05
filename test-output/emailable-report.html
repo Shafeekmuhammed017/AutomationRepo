@@ -1,55 +1,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset='utf-8'>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <title>TestNG Report</title>
-<style type="text/css">
-table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
-td,th {border:1px solid #009;padding:.25em .5em}
-.result th {vertical-align:bottom}
-.param th {padding-left:1em;padding-right:1em}
-.param td {padding-left:.5em;padding-right:2em}
-.stripe td,.stripe th {background-color: #E6EBF9}
-.numi,.numi_attn {text-align:right}
-.total td {font-weight:bold}
-.passedodd td {background-color: #0A0}
-.passedeven td {background-color: #3F3}
-.skippedodd td {background-color: #CCC}
-.skippedodd td {background-color: #DDD}
-.failedodd td,.numi_attn {background-color: #F33}
-.failedeven td,.stripe .numi_attn {background-color: #D00}
-.stacktrace {white-space:pre;font-family:monospace}
-.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
-</style>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
 </head>
 <body>
-<table cellspacing="0" cellpadding="0" class="testOverview">
-<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t1">TestOnChrome</a></td><td class="numi">15</td><td class="numi">13</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">78.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t2">TestOnFirefox</a></td><td class="numi">15</td><td class="numi">13</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">70.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="total"><td>Total</td>
-<td class="numi">30</td><td class="numi">26</td><td class="numi">0</td><td class="numi_attn">8</td><td class="numi">149.2 seconds</td><td colspan="2">&nbsp;</td></tr>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">New SUite for testing parallel</th></tr>
+<tr><td><a href="#t0">TestOnChrome</a></td><td class="num">16</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">108,405</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestOnFirefox</a></td><td class="num">16</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">66,348</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">32</th><th class="num">0</th><th class="num">0</th><th class="num attn">4</th><th class="num">174,753</th><th colspan="2"></th></tr>
 </table>
-<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
-<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr id="t1"><th colspan="5">TestOnChrome &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="4">Tests.TestScripts</td><td><a href="#m1"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619900862</td><td class="numi">53756</td></tr><tr class="failedodd"><td><a href="#m2"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619900862</td><td class="numi">53756</td></tr><tr class="failedodd"><td><a href="#m3"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619900862</td><td class="numi">53756</td></tr><tr class="failedodd"><td><a href="#m4"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619900862</td><td class="numi">53756</td></tr>
-<tr><th colspan="5">TestOnChrome &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="15">Tests.TestScripts</td><td><a href="#m5"><b>testfive</b>  </a></td><td class="numi">1</td><td>1624619900467</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m6"><b>testfour</b>  </a></td><td class="numi">1</td><td>1624619900471</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m7"><b>testone</b>  </a></td><td class="numi">6</td><td>1624619900479</td><td class="numi">8</td></tr><tr class="passedodd"><td><a href="#m8"><b>testone</b>  </a></td><td class="numi">6</td><td>1624619900479</td><td class="numi">8</td></tr><tr class="passedodd"><td><a href="#m9"><b>testone</b>  </a></td><td class="numi">6</td><td>1624619900479</td><td class="numi">8</td></tr><tr class="passedodd"><td><a href="#m10"><b>testone</b>  </a></td><td class="numi">6</td><td>1624619900479</td><td class="numi">8</td></tr><tr class="passedodd"><td><a href="#m11"><b>testone</b>  </a></td><td class="numi">6</td><td>1624619900479</td><td class="numi">8</td></tr><tr class="passedodd"><td><a href="#m12"><b>testone</b>  </a></td><td class="numi">6</td><td>1624619900479</td><td class="numi">8</td></tr><tr class="passedodd"><td><a href="#m13"><b>testsix</b>  </a></td><td class="numi">1</td><td>1624619900490</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m14"><b>testthree</b>  </a></td><td class="numi">1</td><td>1624619900492</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m15"><b>testwo</b>  </a></td><td class="numi">1</td><td>1624619900495</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m16"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619912318</td><td class="numi">63426</td></tr><tr class="passedodd"><td><a href="#m17"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619912318</td><td class="numi">63426</td></tr><tr class="passedodd"><td><a href="#m18"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619912318</td><td class="numi">63426</td></tr><tr class="passedodd"><td><a href="#m19"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619912318</td><td class="numi">63426</td></tr>
-<tr id="t2"><th colspan="5">TestOnFirefox &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="4">Tests.TestScripts</td><td><a href="#m20"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619983772</td><td class="numi">40700</td></tr><tr class="failedodd"><td><a href="#m21"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619983772</td><td class="numi">40700</td></tr><tr class="failedodd"><td><a href="#m22"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619983772</td><td class="numi">40700</td></tr><tr class="failedodd"><td><a href="#m23"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619983772</td><td class="numi">40700</td></tr>
-<tr><th colspan="5">TestOnFirefox &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="15">Tests.TestScripts</td><td><a href="#m24"><b>testfive</b>  </a></td><td class="numi">1</td><td>1624619983719</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m25"><b>testfour</b>  </a></td><td class="numi">1</td><td>1624619983721</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m26"><b>testone</b>  </a></td><td class="numi">6</td><td>1624619983725</td><td class="numi">13</td></tr><tr class="passedodd"><td><a href="#m27"><b>testone</b>  </a></td><td class="numi">6</td><td>1624619983725</td><td class="numi">13</td></tr><tr class="passedodd"><td><a href="#m28"><b>testone</b>  </a></td><td class="numi">6</td><td>1624619983725</td><td class="numi">13</td></tr><tr class="passedodd"><td><a href="#m29"><b>testone</b>  </a></td><td class="numi">6</td><td>1624619983725</td><td class="numi">13</td></tr><tr class="passedodd"><td><a href="#m30"><b>testone</b>  </a></td><td class="numi">6</td><td>1624619983725</td><td class="numi">13</td></tr><tr class="passedodd"><td><a href="#m31"><b>testone</b>  </a></td><td class="numi">6</td><td>1624619983725</td><td class="numi">13</td></tr><tr class="passedodd"><td><a href="#m32"><b>testsix</b>  </a></td><td class="numi">1</td><td>1624619983739</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m33"><b>testthree</b>  </a></td><td class="numi">1</td><td>1624619983740</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m34"><b>testwo</b>  </a></td><td class="numi">1</td><td>1624619983741</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m35"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619997530</td><td class="numi">47645</td></tr><tr class="passedodd"><td><a href="#m36"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619997530</td><td class="numi">47645</td></tr><tr class="passedodd"><td><a href="#m37"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619997530</td><td class="numi">47645</td></tr><tr class="passedodd"><td><a href="#m38"><b>Login</b>  ("Login process with valid and invalid values")</a></td><td class="numi">2</td><td>1624619997530</td><td class="numi">47645</td></tr>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">New SUite for testing parallel</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestOnChrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Tests.TestScripts</td><td><a href="#m0">Login</a></td><td rowspan="2">1625471795964</td><td rowspan="2">5681</td></tr><tr class="failedeven"><td><a href="#m1">Login</a></td></tr><tr><th colspan="4">TestOnChrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="16">Tests.TestScripts</td><td><a href="#m2">Login</a></td><td rowspan="2">1625471801649</td><td rowspan="2">22699</td></tr><tr class="passedeven"><td><a href="#m3">Login</a></td></tr><tr class="passedeven"><td><a href="#m4">eight</a></td><td rowspan="1">1625471733280</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m5">nine</a></td><td rowspan="1">1625471733285</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m6">testfive</a></td><td rowspan="1">1625471733289</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m7">testfour</a></td><td rowspan="1">1625471733291</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m8">testone</a></td><td rowspan="6">1625471733299</td><td rowspan="6">4</td></tr><tr class="passedeven"><td><a href="#m9">testone</a></td></tr><tr class="passedeven"><td><a href="#m10">testone</a></td></tr><tr class="passedeven"><td><a href="#m11">testone</a></td></tr><tr class="passedeven"><td><a href="#m12">testone</a></td></tr><tr class="passedeven"><td><a href="#m13">testone</a></td></tr><tr class="passedeven"><td><a href="#m14">testsevenlast</a></td><td rowspan="1">1625471733309</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m15">testsix</a></td><td rowspan="1">1625471733311</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m16">testthree</a></td><td rowspan="1">1625471733313</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m17">testwo</a></td><td rowspan="1">1625471733315</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestOnFirefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Tests.TestScripts</td><td><a href="#m18">Login</a></td><td rowspan="2">1625471861566</td><td rowspan="2">6826</td></tr><tr class="failedeven"><td><a href="#m19">Login</a></td></tr><tr><th colspan="4">TestOnFirefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="16">Tests.TestScripts</td><td><a href="#m20">Login</a></td><td rowspan="2">1625471868393</td><td rowspan="2">20598</td></tr><tr class="passedeven"><td><a href="#m21">Login</a></td></tr><tr class="passedeven"><td><a href="#m22">eight</a></td><td rowspan="1">1625471831401</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m23">nine</a></td><td rowspan="1">1625471831404</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m24">testfive</a></td><td rowspan="1">1625471831409</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m25">testfour</a></td><td rowspan="1">1625471831413</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m26">testone</a></td><td rowspan="6">1625471831420</td><td rowspan="6">4</td></tr><tr class="passedeven"><td><a href="#m27">testone</a></td></tr><tr class="passedeven"><td><a href="#m28">testone</a></td></tr><tr class="passedeven"><td><a href="#m29">testone</a></td></tr><tr class="passedeven"><td><a href="#m30">testone</a></td></tr><tr class="passedeven"><td><a href="#m31">testone</a></td></tr><tr class="passedeven"><td><a href="#m32">testsevenlast</a></td><td rowspan="1">1625471831432</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m33">testsix</a></td><td rowspan="1">1625471831433</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m34">testthree</a></td><td rowspan="1">1625471831435</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m35">testwo</a></td><td rowspan="1">1625471831436</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h1>TestOnChrome</h1>
-<h2 id="m1">Tests.TestScripts:Login</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>shafeek@melbasi.com</td>
-<td>1233672627626</td>
-</tr>
-<tr><td colspan="2">
-<div class="stacktrace">java.lang.AssertionError: null
+<h2>TestOnChrome</h2><h3 id="m0">Tests.TestScripts#Login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>shafeek@melbasi.com</td><td>1233672627626</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.fail(Assert.java:102)
 	at pom.loginPo.signIn(loginPo.java:64)
@@ -69,18 +36,8 @@ td,th {border:1px solid #009;padding:.25em .5em}
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
-</div>
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">Tests.TestScripts:Login</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>demo@melbasiii.com</td>
-<td>1234567890</td>
-</tr>
-<tr><td colspan="2">
-<div class="stacktrace">java.lang.AssertionError: null
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.TestScripts#Login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>demo@melbasiii.com</td><td>1234567890</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.fail(Assert.java:102)
 	at pom.loginPo.signIn(loginPo.java:64)
@@ -100,57 +57,24 @@ td,th {border:1px solid #009;padding:.25em .5em}
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
-</div>
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">Tests.TestScripts:Login</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>demo@melbasi.com</td>
-<td>1234567890</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">Tests.TestScripts:testthree</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">Tests.TestScripts:testone</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">Tests.TestScripts:testone</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">Tests.TestScripts:testone</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">Tests.TestScripts:testsix</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">Tests.TestScripts:testone</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">Tests.TestScripts:testfive</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m11">Tests.TestScripts:testfour</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m12">Tests.TestScripts:testone</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m13">Tests.TestScripts:Login</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>demo@melbasi.com</td>
-<td>1234567890</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m14">Tests.TestScripts:testone</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m15">Tests.TestScripts:testwo</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>TestOnFirefox</h1>
-<h2 id="m16">Tests.TestScripts:Login</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>demo@melbasiii.com</td>
-<td>1234567890</td>
-</tr>
-<tr><td colspan="2">
-<div class="stacktrace">java.lang.AssertionError: null
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.TestScripts#Login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>demo@melbasi.com</td><td>1234567890</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests.TestScripts#Login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>demo@melbasi.com</td><td>1234567890</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tests.TestScripts#eight</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Tests.TestScripts#nine</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Tests.TestScripts#testfive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Tests.TestScripts#testfour</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Tests.TestScripts#testone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Tests.TestScripts#testone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Tests.TestScripts#testone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">Tests.TestScripts#testone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">Tests.TestScripts#testone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">Tests.TestScripts#testone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">Tests.TestScripts#testsevenlast</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">Tests.TestScripts#testsix</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">Tests.TestScripts#testthree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">Tests.TestScripts#testwo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestOnFirefox</h2><h3 id="m18">Tests.TestScripts#Login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>shafeek@melbasi.com</td><td>1233672627626</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.fail(Assert.java:102)
 	at pom.loginPo.signIn(loginPo.java:64)
@@ -170,18 +94,8 @@ td,th {border:1px solid #009;padding:.25em .5em}
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
-</div>
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m17">Tests.TestScripts:Login</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>shafeek@melbasi.com</td>
-<td>1233672627626</td>
-</tr>
-<tr><td colspan="2">
-<div class="stacktrace">java.lang.AssertionError: null
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">Tests.TestScripts#Login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>demo@melbasiii.com</td><td>1234567890</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.fail(Assert.java:102)
 	at pom.loginPo.signIn(loginPo.java:64)
@@ -201,46 +115,22 @@ td,th {border:1px solid #009;padding:.25em .5em}
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
-</div>
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m18">Tests.TestScripts:testfour</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m19">Tests.TestScripts:testone</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m20">Tests.TestScripts:testone</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m21">Tests.TestScripts:testone</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m22">Tests.TestScripts:testone</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m23">Tests.TestScripts:testfive</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m24">Tests.TestScripts:testsix</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m25">Tests.TestScripts:testwo</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m26">Tests.TestScripts:testthree</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m27">Tests.TestScripts:testone</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m28">Tests.TestScripts:testone</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m29">Tests.TestScripts:Login</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>demo@melbasi.com</td>
-<td>1234567890</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m30">Tests.TestScripts:Login</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>demo@melbasi.com</td>
-<td>1234567890</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-</body></html>
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">Tests.TestScripts#Login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>demo@melbasi.com</td><td>1234567890</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">Tests.TestScripts#Login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>demo@melbasi.com</td><td>1234567890</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">Tests.TestScripts#eight</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">Tests.TestScripts#nine</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">Tests.TestScripts#testfive</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">Tests.TestScripts#testfour</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">Tests.TestScripts#testone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">Tests.TestScripts#testone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">Tests.TestScripts#testone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">Tests.TestScripts#testone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">Tests.TestScripts#testone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">Tests.TestScripts#testone</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">Tests.TestScripts#testsevenlast</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">Tests.TestScripts#testsix</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">Tests.TestScripts#testthree</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m35">Tests.TestScripts#testwo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

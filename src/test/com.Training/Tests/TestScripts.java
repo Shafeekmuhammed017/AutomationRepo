@@ -28,7 +28,9 @@ public class TestScripts extends Base_page implements Constants {
        }
        catch (Exception e)
        {
-           System.out.println(e);
+           System.out.println(e.getMessage());
+           System.out.println(e.getCause());
+           e.printStackTrace();
            Assert.fail("=================Invalid Login Credentials==================");
        } }
 
